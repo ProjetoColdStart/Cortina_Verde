@@ -1,0 +1,60 @@
+====================================================================
+  LISTA DE BIBLIOTECAS E PLATAFORMAS NECESSÁRIAS PARA O CÓDIGO
+====================================================================
+1. PACOTE DE PLACA (BOARD PACKAGE)
+
+--------------------------------------------------------------------
+Este código utiliza as bibliotecas WiFiS3.h e RTC.h, que são específicas 
+
+para a placa Arduino UNO R4 WiFi.
+
+- Pacote a instalar: Arduino UNO R4 Boards (por Arduino)
+
+- Como instalar:
+
+  1. Vá em Ferramentas > Placa > Gerenciador de Placas...
+
+  2. Procure por "UNO R4".
+
+  3. Instale o pacote "Arduino UNO R4 Boards".
+
+  4. Selecione a placa "Arduino UNO R4 WiFi" em Ferramentas > Placa.
+
+--------------------------------------------------------------------
+2. BIBLIOTECAS PRÉ-INSTALADAS / NATIVAS DA PLACA
+--------------------------------------------------------------------
+As bibliotecas abaixo vêm inclusas no Arduino IDE ou no pacote da placa UNO R4,
+não sendo necessário instalar nada extra para elas:
+
+- <SPI.h>       : Barramento de comunicação SPI (padrão do Arduino IDE).
+
+- <SD.h>        : Leitura e escrita em cartão SD (padrão do Arduino IDE).
+
+- <WiFiS3.h>    : Conexão Wi-Fi (inclusa no pacote Arduino UNO R4 Boards).
+
+- <WiFiUdp.h>   : Comunicação UDP para sincronização NTP (inclusa na WiFiS3).
+
+- "RTC.h"       : Controle do relógio interno em tempo real (inclusa no pacote UNO R4).
+
+--------------------------------------------------------------------
+3. BIBLIOTECAS EXTERNAS (PRECISAM SER INSTALADAS)
+--------------------------------------------------------------------
+Você precisará instalar manualmente a biblioteca do sensor DHT22.
+
+- Nome no Gerenciador: DHT sensor library (por Adafruit)
+
+- Dependência necessária: Adafruit Unified Sensor (por Adafruit)
+
+- Como instalar:
+
+  1. Vá em Sketch > Incluir Biblioteca > Gerenciar Bibliotecas...
+
+  2. Na barra de pesquisa, digite "DHT sensor library".
+
+  3. Selecione a biblioteca mantida por "Adafruit".
+
+  4. Clique em "Instalar".
+
+  5. Se o Arduino IDE perguntar sobre instalar dependências ("Install all"), 
+     confirme para instalar também a "Adafruit Unified Sensor".
+
